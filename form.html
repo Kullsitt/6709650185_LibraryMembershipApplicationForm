@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="./lbrlogo.jpeg" alt="Logo" class="logo">
+    <h2>สมัครสมาชิกห้องสมุด</h2>
+
+    <hr>
+
+    <form id="libraryForm">
+        <label for="firstName"></label>
+        <input type="text" id="firstName" name="firstName" placeholder="ชื่อ" required><br><br>
+
+        <label for="lastName"></label>
+        <input type="text" id="lastName" name="lastName" placeholder="นามสกุล" required><br><br>
+
+        <label for="firstNameEng"></label>
+        <input type="text" id="firstNameEng" name="firstNameEng" placeholder="firstname" required><br><br>
+
+        <label for="lastNameEng"></label>
+        <input type="text" id="lastNameEng" name="lastNameEng" placeholder="lastname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="yourmail@example.com" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+
+        <label>เพศ:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">หญิง</label>
+        </div>
+
+        <label for="dob">วันเดือนปีเกิด:</label>
+        <div class="dob">
+            <select name="year" required>
+                <option value="">ปี</option>
+                <option value="">1995</option>
+                <option value="">1996</option>
+                <option value="">1997</option>
+                <option value="">1998</option>
+                <option value="">1999</option>
+                <option value="">2000</option>
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+                <option value="">2005</option>
+                <option value="">2006</option>
+                <option value="">2007</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+                <option value="">2010</option>
+                <option value="">2011</option>
+                <option value="">2012</option>
+                <option value="">2013</option>
+                <option value="">2014</option>
+                <option value="">2015</option>
+                <option value="">2016</option>
+                <option value="">2016</option>
+                <option value="">2017</option>
+                <option value="">2018</option>
+                <option value="">2019</option>
+                <option value="">2020</option>
+            </select>
+            <select name="month" required>
+                <option value="">เดือน</option>
+                <option value="">January</option>
+                <option value="">Fabuary</option>
+                <option value="">March</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">April</option>
+                <option value="">August</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+            <select name="day" required>
+                <option value="">วัน</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+            </select>
+        </div>
+
+        <label for="faculty">คณะที่ศึกษา:</label>
+        <select id="faculty" name="faculty" required>
+            <option value=""></option>
+            <option value="law">คณะนิติศาสตร์</option>
+            <option value="commerce">คณะพาณิชยศาสตร์และการบัญชี</option>
+            <option value="political-science">คณะรัฐศาสตร์</option>
+            <option value="economics">คณะเศรษฐศาสตร์</option>
+            <option value="social-administration">คณะสังคมสงเคราะห์ศาสตร์</option>
+            <option value="journalism">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+            <option value="liberal-arts">คณะศิลปศาสตร์</option>
+            <option value="science-technology">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+            <option value="engineering">คณะวิศวกรรมศาสตร์</option>
+            <option value="medicine">คณะแพทยศาสตร์</option>
+            <option value="public-health">คณะสาธารณสุขศาสตร์</option>
+            <option value="allied-health">คณะสหเวชศาสตร์</option>
+            <option value="nursing">คณะพยาบาลศาสตร์</option>
+            <option value="dentistry">คณะทันตแพทยศาสตร์</option>
+            <option value="pharmacy">คณะเภสัชศาสตร์</option>
+            <option value="fine-arts">คณะศิลปกรรมศาสตร์</option>
+            <option value="architecture">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+            <option value="education">คณะศึกษาศาสตร์</option>
+            <option value="innovation">คณะนวัตกรรมการบริการ</option>
+            <option value="integrated-med">วิทยาลัยสหวิทยาการ</option>
+            <option value="interdisciplinary">วิทยาลัยนานาชาติปรีดี พนมยงค์</option>
+            <option value="puey">วิทยาลัยพัฒนศาสตร์ ป๋วย อึ๊งภากรณ์</option>
+        </select>
+
+        <div class="agreement">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">ต้องการรับข่าวสารข้อมูลของห้องสมุดทาง email</label>
+        </div>
+
+        <input type="submit" value="สมัครสมาชิก">
+    </form>
+</div>
+
+</body>
+</html>
